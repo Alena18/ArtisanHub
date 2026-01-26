@@ -211,6 +211,13 @@ a:hover::after {
   z-index: 2;
 }
 
+@media (max-width: 450px) {
+  .hero-btn {
+  left: 35%;
+  
+}
+}
+
 .btn:hover{
     border: none;
     transform: scale(1.1);
