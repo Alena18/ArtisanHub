@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="artisan products, handmade goods, crafts, unique items, local artisans"
+    />
+    <meta
+      name="description"
+      content="Learn more about ArtisanHub — handmade products from passionate creators."
+    />
+    <script
+      src="https://kit.fontawesome.com/5802b95eec.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ArtisanHub | About Us</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="container header-top">
+          <div class="header-main">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="ArtisanHub logo" class="logo"
+            /></a>
+            <h1 class="site-title">Handmade Artisan Products</h1>
+          </div>
+
+          <div class="header-search">
+            <form class="search" action="product.html" method="GET">
+              <input type="text" name="q" placeholder="Search our site" />
+              <button type="submit" aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="nav-bar">
+          <div class="container">
+            <nav class="nav">
+              <a class="nav-item" href="index.html">Home</a>
+              <a class="nav-item" href="about.html" aria-current="page"
+                >About Us</a
+              >
+              <a class="nav-item" href="product.html">Products</a>
+              <a class="nav-item" href="checkout.html">Checkout</a>
+              <a class="nav-item" href="contact.html">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- Flying bird (overlay across the whole page) -->
+      <img
+        src="images/bird_down_left.png"
+        id="bird"
+        class="flying-bird"
+        alt=""
+        aria-hidden="true"
+      />
+
+      <main class="container about">
+        <h2 class="about-title">About ArtisanHub</h2>
+
+        <p class="about-text">
+          ArtisanHub connects you with handmade products crafted with care —
+          from cozy wool pieces to thoughtful gifts and home decor. We celebrate
+          small makers, natural materials, and the stories behind every item.
+        </p>
+
+        <div class="about-card">
+          <h3>Our Story</h3>
+
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/NRcOTeSgYJQ"
+              title="ArtisanHub video"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <br />
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>Made from the heart</h3>
+            <p>
+              Every product is created by a real person — stitched, shaped, and
+              finished with intention.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Support local makers</h3>
+            <p>
+              Your purchase helps artists and craftspeople keep doing what they
+              love.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>Quality you can feel</h3>
+            <p>
+              We highlight handmade items using authentic materials and careful
+              craftsmanship.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div class="social">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Pinterest" target="_blank" rel="noopener"
+              ><i class="fab fa-pinterest"></i
+            ></a>
+          </div>
+          <div>&copy; <span id="year"></span> ArtisanHub.</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

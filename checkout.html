@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout your ArtisanHub cart." />
+    <script
+      src="https://kit.fontawesome.com/5802b95eec.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ArtisanHub | Checkout</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="container header-top">
+          <div class="header-main">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="ArtisanHub logo" class="logo"
+            /></a>
+            <h1 class="site-title">Handmade Artisan Products</h1>
+          </div>
+
+          <div class="header-search">
+            <form class="search" action="product.html" method="GET">
+              <input type="text" name="q" placeholder="Search our site" />
+              <button type="submit" aria-label="Search">
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="nav-bar">
+          <div class="container">
+            <nav class="nav">
+              <a class="nav-item" href="index.html">Home</a>
+              <a class="nav-item" href="about.html">About Us</a>
+              <a class="nav-item" href="product.html">Products</a>
+              <a class="nav-item" href="checkout.html" aria-current="page"
+                >Checkout</a
+              >
+              <a class="nav-item" href="contact.html">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="container checkout">
+        <h2 class="checkout-title">Checkout</h2>
+
+        <div id="cartEmpty" class="cart-empty" hidden>
+          Your cart is empty. <a href="product.html">Go to products</a>.
+        </div>
+
+        <div id="cartWrap" class="cart-wrap" hidden>
+          <div id="cartItems" class="cart-items"></div>
+
+          <div class="cart-summary">
+            <div class="summary-row">
+              <span>Subtotal</span>
+              <strong id="subtotal">€0.00</strong>
+            </div>
+            <div class="summary-row">
+              <span>Total</span>
+              <strong id="total">€0.00</strong>
+            </div>
+
+            <button id="clearCart" class="btn btn-secondary" type="button">
+              Clear Cart
+            </button>
+            <button class="btn" id="payBtn" type="button">Pay</button>
+          </div>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div class="social">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Pinterest" target="_blank" rel="noopener"
+              ><i class="fab fa-pinterest"></i
+            ></a>
+          </div>
+          <div>&copy; <span id="year"></span> ArtisanHub.</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>

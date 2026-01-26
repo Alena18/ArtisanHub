@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact ArtisanHub — address, phone, email, and map."
+    />
+
+    <title>ArtisanHub | Contact Us</title>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5802b95eec.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- HEADER -->
+      <header class="site-header">
+        <div class="container header-top">
+          <div class="header-main">
+            <a href="index.html">
+              <img src="images/logo.png" alt="ArtisanHub logo" class="logo" />
+            </a>
+            <h1 class="site-title">Handmade Artisan Products</h1>
+          </div>
+        </div>
+
+        <div class="nav-bar">
+          <div class="container">
+            <nav class="nav">
+              <a class="nav-item" href="index.html">Home</a>
+              <a class="nav-item" href="about.html">About Us</a>
+              <a class="nav-item" href="product.html">Products</a>
+              <a class="nav-item" href="checkout.html">Checkout</a>
+              <a class="nav-item" href="contact.html" aria-current="page">
+                Contact Us
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main class="container contact">
+        <h2 class="contact-title">Contact Us</h2>
+
+        <div class="contact-grid">
+          <!-- Contact details -->
+          <section class="contact-card">
+            <h3>Get in touch</h3>
+
+            <div class="contact-row">
+              <i class="fas fa-location-dot"></i>
+              <div>
+                <strong>Address</strong><br />
+                12 Artisan Street<br />
+                Dublin, Ireland
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong><br />
+                <a href="mailto:artisanhub@example.com">
+                  artisanhub@example.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-row">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong><br />
+                <a href="tel:+353123456789">+353 123 456 789</a>
+              </div>
+            </div>
+
+            <!-- MAP -->
+            <div id="map"></div>
+          </section>
+
+          <!-- Contact form -->
+          <section class="contact-card">
+            <h3>Send a message</h3>
+
+            <form id="contactForm" class="contact-form">
+              <label>
+                Name
+                <input type="text" name="name" required />
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" required />
+              </label>
+
+              <label>
+                Subject
+                <input type="text" name="subject" required />
+              </label>
+
+              <label>
+                Message
+                <textarea name="message" rows="6" required></textarea>
+              </label>
+
+              <button class="btn" type="submit">Send Message</button>
+            </form>
+          </section>
+        </div>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div>&copy; <span id="year"></span> ArtisanHub.</div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Page JS -->
+    <script src="js/map.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
