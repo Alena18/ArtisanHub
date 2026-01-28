@@ -3,12 +3,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Bird flap, appears across the screen four times
   const bird = document.getElementById("bird");
   if (bird) {
     const frames = ["images/bird_down_left.png", "images/bird_up_left.png"];
 
-    // Preload both frames
+    let flapTimer;
+    let i = 0;
+
+    function startFlap() {
+      flapTimer = setInterval(() => {
+        i = 1 - i;
+        bird.src = frames[i];
+      }, 550);
+    }
+
+    // preload frames
     let loaded = 0;
     frames.forEach((src) => {
       const img = new Image();
@@ -16,17 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
         loaded++;
         if (loaded === frames.length) startFlap();
       };
-      img.onerror = () => console.error("FAILED to load:", src);
       img.src = src;
     });
 
-    function startFlap() {
-      let i = 0;
-      setInterval(() => {
-        i = 1 - i;
-        bird.src = frames[i];
-      }, 550); // slower flap
-    }
+    bird.addEventListener("animationend", (e) => {
+      if (e.animationName === "fly-across") {
+        clearInterval(flapTimer);
+        bird.style.display = "none";
+      }
+    });
   }
 
   // Contact form popup (only if form exists)

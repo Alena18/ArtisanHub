@@ -76,21 +76,20 @@
         <div class="about-card">
           <h3>Our Story</h3>
 
-          <div class="video-wrapper">
-            <iframe
-              src="https://www.youtube.com/embed/NRcOTeSgYJQ"
-              title="ArtisanHub video"
-              allow="
-                accelerometer;
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                gyroscope;
-                picture-in-picture;
-              "
-              allowfullscreen
-            ></iframe>
-          </div>
+          <figure class="video-wrapper">
+            <video controls width="100%">
+              <source
+                src="images/10474541-hd_1920_1080_30fps.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <video controls>
+              <source src="videos/our-story.mp4" type="video/mp4" />
+            </video>
+            <figcaption>
+              How ArtisanHub began — our journey, values, and mission.
+            </figcaption>
+          </figure>
         </div>
         <br />
         <div class="about-grid">
@@ -118,6 +117,49 @@
             </p>
           </div>
         </div>
+
+        <section class="about-faq">
+          <h3>Frequently Asked Questions</h3>
+
+          <details class="about-card">
+            <summary><span class="sum-text">What is ArtisanHub?</span></summary>
+            <p>
+              ArtisanHub is a marketplace that connects customers with
+              independent makers offering handmade and thoughtfully crafted
+              products.
+            </p>
+          </details>
+
+          <details class="about-card">
+            <summary>
+              <span class="sum-text">Are all products handmade?</span>
+            </summary>
+            <p>
+              Yes. Every product listed on ArtisanHub is created by a real
+              artisan using traditional techniques and quality materials.
+            </p>
+          </details>
+
+          <details class="about-card">
+            <summary>
+              <span class="sum-text">Where do your artisans come from?</span>
+            </summary>
+            <p>
+              Our artisans are based mainly in Ireland and across Europe, with a
+              strong focus on local and small-scale makers.
+            </p>
+          </details>
+
+          <details class="about-card">
+            <summary>
+              <span class="sum-text">How can I support an artisan?</span>
+            </summary>
+            <p>
+              You can support artisans by purchasing their products, sharing
+              their work, and choosing handmade over mass-produced items.
+            </p>
+          </details>
+        </section>
       </main>
 
       <footer class="site-footer">
