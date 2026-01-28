@@ -89,7 +89,7 @@ document.addEventListener("input", (e) => {
   const cart = getCart();
   if (!cart[id]) return;
 
-  cart[id].qty = Math.max(1, parseInt(input.value, 10) || 1);
+  cart[id].qty = Math.max(0, parseInt(input.value, 10) || 0);
   saveCart(cart);
   renderCheckout();
 });
