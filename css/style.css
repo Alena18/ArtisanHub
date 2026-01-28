@@ -176,6 +176,30 @@ a:hover::after {
   transform: scaleX(1);
 }
 
+
+/* Responsive */
+
+@media (max-width: 450px) {
+  .header-search {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .search input {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .search button {
+    width: 44px;
+    font-size: 16px;
+  }
+}
+
 /* Background image on home page */
 
 .hero-img {
@@ -210,6 +234,8 @@ a:hover::after {
   left: 45%;
   z-index: 2;
 }
+
+/* Responsive */
 
 @media (max-width: 450px) {
   .hero-btn {
@@ -302,7 +328,7 @@ a:hover::after {
   line-height: 1.6;
 }
 
-/* underline for h3 */
+/* Underline for h3 */
 .about-card h3{
   font-size:22px;
   margin-bottom:8px;
@@ -333,7 +359,7 @@ a:hover::after {
 
 .about-faq details{margin-bottom:.75rem}
 
-/* make summary full-width clickable + add triangle */
+/* Make summary full-width clickable + add triangle */
 .about-faq summary{
   cursor: pointer;
   font-weight: 600;
@@ -359,7 +385,7 @@ a:hover::after {
   margin-bottom:.5rem;
 }
 
-/* underline ONLY under the text span inside summary */
+/* Underline ONLY under the text span inside summary */
 .about-faq .sum-text{
   position:relative;
   display:inline-block;
@@ -833,6 +859,7 @@ figcaption{
   display: none !important;
 }
 
+/* Responsive */
 
 @media (max-width: 900px) {
   .contact-grid {

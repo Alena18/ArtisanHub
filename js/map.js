@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Leaflet map (minimal + reliable)
+  // Leaflet map
   const mapDiv = document.getElementById("map");
   if (mapDiv && typeof L !== "undefined") {
     const lat = 53.3498;
